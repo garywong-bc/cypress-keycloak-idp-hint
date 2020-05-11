@@ -1,4 +1,4 @@
-# cypress-keycloak
+# cypress-keycloak-idp-hint
 
 Cypress commands for Keycloak
 
@@ -8,19 +8,19 @@ Cypress commands for Keycloak
 
 Using [npm](https://www.npmjs.com/):
 
-    $ npm install cypress-keycloak -D
+    $ npm install cypress-keycloak-idp-hint -D
 
 Using [yarn](https://yarnpkg.com/):
 
-    $ yarn add cypress-keycloak -D
+    $ yarn add cypress-keycloak-idp-hint -D
 
 Then with a module bundler like [webpack](https://webpack.github.io/), add the following line to `cypress/support/index.js`:
 
 ```js
 // Using ES6
-import 'cypress-keycloak';
+import 'cypress-keycloak-idp-hint';
 // using CommonJS
-require('cypress-keycloak');
+require('cypress-keycloak-idp-hint');
 ```
 
 ---
@@ -67,7 +67,7 @@ describe('thing', () => {
 
 ### Credits
 
-cypress-keycloak is built and maintained by **babangsund**.  
+cypress-keycloak-idp-hint is based upon cypress-keycloak, built and maintained by **babangsund**.  
 [@blog](https://babangsund.com/).  
 [@github](https://github.com/babangsund).  
 [@twitter](https://twitter.com/babangsund).

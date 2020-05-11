@@ -3,10 +3,10 @@
   "version": "1.4.0",
   "author": "babangsund",
   "main": "dist/index.js",
-  "name": "cypress-keycloak",
+  "name": "cypress-keycloak-idp-hint",
   "module": "dist/index.esm.js",
-  "description": "Cypress commands for Keycloak",
-  "repository": "https://github.com/babangsund/cypress-keycloak",
+  "description": "Cypress commands for Keycloak, from babangsund",
+  "repository": "https://github.com/garywong-bc/cypress-keycloak-idp-hint",
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
     "watch": "NODE_ENV=development rollup -c -w"
