@@ -11,7 +11,7 @@ const license = {
   output: {
     preamble: [
       '/**',
-      ' * cypress-keycloak v' + process.env.npm_package_version,
+      ' * cypress-keycloak-idp-hint v' + process.env.npm_package_version,
       ' *',
       ' * Copyright (c) 2019 babangsund',
       ' *',
