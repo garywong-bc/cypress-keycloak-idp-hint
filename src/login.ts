@@ -2,7 +2,7 @@ import createUUID from './createUUID';
 
 Cypress.Commands.add(
   'login',
-  ({ root, realm, username, password, client_id, redirect_uri }) =>
+  ({ root, realm, username, password, client_id, redirect_uri, idpHint }) =>
     cy
       .request({
         url: `${root}/auth/realms/${realm}/protocol/openid-connect/auth`,
@@ -32,6 +32,7 @@ Cypress.Commands.add(
             body: {
               username: username,
               password: password,
+              idpHint: idpHint,
             },
           });
       })
