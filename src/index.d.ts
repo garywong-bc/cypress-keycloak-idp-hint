@@ -13,6 +13,7 @@ declare namespace Cypress {
     password: string;
     client_id: string;
     redirect_uri: string;
+    idp_hint: string;
   }
   interface Chainable {
     logout({ root, realm, redirect_uri }: Logout): Chainable;
@@ -23,6 +24,7 @@ declare namespace Cypress {
       password,
       client_id,
       redirect_uri,
+      idp_hint,
     }: Login): Chainable;
   }
 }

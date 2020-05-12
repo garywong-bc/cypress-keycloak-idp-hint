@@ -40,6 +40,7 @@ Two `cy` commands have been added:
   - `password`: string
   - `client_id`: string
   - `redirect_uri`: string
+  - `idp_hint`: string
 
 ### Example:
 
@@ -53,6 +54,7 @@ describe('thing', () => {
       password: 'bacon',
       client_id: 'frontend',
       redirect_uri: 'https://babangsund.com/',
+      idp_hint: 'IDIR',
     });
   });
   afterEach(() => {
