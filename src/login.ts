@@ -14,7 +14,7 @@ Cypress.Commands.add(
           nonce: createUUID(),
           response_type: 'code',
           response_mode: 'fragment',
-          idpHint: idp_hint
+          kc_idp_hint: idp_hint
         },
       })
       .then(response => {
