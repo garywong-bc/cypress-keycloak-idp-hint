@@ -14,12 +14,12 @@ Cypress.Commands.add(
           nonce: createUUID(),
           response_type: 'code',
           response_mode: 'fragment',
-          kc_idp_hint: idp_hint
         },
       })
-      .then(response => {
+      .then(response => {        
         const html = document.createElement('html');
         html.innerHTML = response.body;
+        cy.log(html.innerHTML) // Debug
 
         const form = html.getElementsByTagName('form');
         const isAuthorized = !form.length;
@@ -34,6 +34,9 @@ Cypress.Commands.add(
               username: username,
               password: password,
             },
+            qs: {
+              kc_idp_hint: idp_hint
+            },            
           });
       })
 );
