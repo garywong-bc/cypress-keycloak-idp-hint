@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "author": "babangsund",
   "main": "dist/index.js",
-  "name": "cypress-keycloak",
+  "name": "nrm-cypress-keycloak",
   "module": "dist/index.esm.js",
   "description": "Cypress commands for Keycloak",
   "repository": "https://github.com/babangsund/cypress-keycloak",

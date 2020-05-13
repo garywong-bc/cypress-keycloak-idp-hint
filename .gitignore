@@ -2,7 +2,9 @@
 node_modules/
 
 # production
-dist/
+
+# 2020-05-13 09:23:46 GW Temporary inclusion of generated *.js
+#dist/
 
 # misc
 .DS_STORE

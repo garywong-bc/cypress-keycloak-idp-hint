@@ -1,6 +1,6 @@
-# cypress-keycloak
+# nrm-cypress-keycloak
 
-Cypress commands for Keycloak
+Cypress commands for Keycloak, customized for NRM
 
 ---
 
@@ -8,19 +8,19 @@ Cypress commands for Keycloak
 
 Using [npm](https://www.npmjs.com/):
 
-    $ npm install cypress-keycloak -D
+    $ npm install nrm-cypress-keycloak -D
 
 Using [yarn](https://yarnpkg.com/):
 
-    $ yarn add cypress-keycloak -D
+    $ yarn add nrm-cypress-keycloak -D
 
 Then with a module bundler like [webpack](https://webpack.github.io/), add the following line to `cypress/support/index.js`:
 
 ```js
 // Using ES6
-import 'cypress-keycloak';
+import 'nrm-cypress-keycloak';
 // using CommonJS
-require('cypress-keycloak');
+require('nrm-cypress-keycloak');
 ```
 
 ---
@@ -47,8 +47,8 @@ Two `cy` commands have been added:
 describe('thing', () => {
   beforeEach(() => {
     cy.login({
-      root: 'https://keycloak.babangsund.com',
-      realm: 'stage',
+      root: 'https://sso-dev.pathfinder.gov.bc.ca',
+      realm: 'idir',
       username: 'babangsund',
       password: 'bacon',
       client_id: 'frontend',
@@ -57,8 +57,8 @@ describe('thing', () => {
   });
   afterEach(() => {
     cy.logout({
-      root: 'https://keycloak.babangsund.com',
-      realm: 'stage',
+      root: 'https://sso-dev.pathfinder.gov.bc.ca',
+      realm: 'idir',
       redirect_uri: 'https://babangsund.com/',
     });
   });
@@ -67,7 +67,7 @@ describe('thing', () => {
 
 ### Credits
 
-cypress-keycloak is built and maintained by **babangsund**.  
+nrm-cypress-keycloak is 100% based upon cypress-keycloak, built and maintained by **babangsund**.  
 [@blog](https://babangsund.com/).  
 [@github](https://github.com/babangsund).  
 [@twitter](https://twitter.com/babangsund).
